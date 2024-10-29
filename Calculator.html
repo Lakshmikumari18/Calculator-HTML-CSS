@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <section class="calculator">  
+        <div class="buttons">
+            <form name="form1">
+                <input id = "calc" type ="text" name = "answer"> <br> <br>  
+                <button type = "button" class="btn btn-yellow" value = "(" onclick = "form1.answer.value += '(' ">(</button>  
+                <button type = "button" class="btn btn-yellow" value = ")" onclick = "form1.answer.value += ')' ">)</button>  
+                <button type = "button" class="btn btn-yellow" value = "%" onclick = "form1.answer.value += '%' ">%</button>  
+                <button type = "button" class="btn btn-yellow" value = "/" onclick = "form1.answer.value += '/' ">/</button>  
+
+                <button type = "button" class="btn btn-grey" value = "7" onclick = "form1.answer.value += '7' ">7</button>  
+                <button type = "button" class="btn btn-grey" value = "8" onclick = "form1.answer.value += '8' ">8</button>  
+                <button type = "button" class="btn btn-grey" value = "9" onclick = "form1.answer.value += '9' ">9</button>
+                <button type = "button" class="btn btn-yellow" value = "+" onclick = "form1.answer.value += '+' ">+</button> 
+                
+                <button type = "button" class="btn btn-grey" value = "4" onclick = "form1.answer.value += '4' ">4</button> 
+                <button type = "button" class="btn btn-grey" value = "5" onclick = "form1.answer.value += '5' ">5</button>  
+                <button type = "button" class="btn btn-grey" value = "6" onclick = "form1.answer.value += '6' ">6</button>
+                <button type = "button" class="btn btn-yellow" value = "-" onclick = "form1.answer.value += '-' ">-</button> 
+                
+                <button type = "button" class="btn btn-grey" value = "1" onclick = "form1.answer.value += '1' ">1</button>  
+                <button type = "button" class="btn btn-grey" value = "2" onclick = "form1.answer.value += '2' ">2</button>
+                <button type = "button" class="btn btn-grey" value = "3" onclick = "form1.answer.value += '3' ">3</button>
+                <button type = "button" class="btn btn-yellow" value = "*" onclick = "form1.answer.value += '*' ">*</button>  
+        
+                
+  
+      
+                <button type = "button" class="btn btn-grey" value = "0" onclick = "form1.answer.value += '0' ">0</button>  
+                <button type = "button" class="btn btn-grey" value = "." onclick = "form1.answer.value += '.' ">.</button> 
+                <button type = "button" class="btn btn-equal" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">=</button>  
+                 
+                <!-- Display the Cancel button and erase all data entered by the user. -->  
+                <button type = "button" class="btn btn-clear" value = "C" onclick = "form1.answer.value = ' ' " id= "clear" >C</button>  
+                <br>   
+            </form>
+        </div>
+    </section>  
+</div>  
+</body>
+</html>
